@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  # Base de données PostgreSQL pour Odoo
+  odoo-db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=odoo
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo_dev_password
+    volumes:
+      - odoo-db-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"  # Port différent pour éviter conflit avec Supabase local
+    networks:
+      - odoo-network
+
+  # Odoo Community Edition
+  odoo:
+    image: odoo:17.0  # Dernière version stable
+    depends_on:
+      - odoo-db
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=odoo-db
+      - USER=odoo
+      - PASSWORD=odoo_dev_password
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./odoo-addons:/mnt/extra-addons  # Pour modules custom futurs
+    networks:
+      - odoo-network
+    command: -- --dev=all  # Mode développement avec rechargement auto
+
+volumes:
+  odoo-db-data:
+  odoo-web-data:
+
+networks:
+  odoo-network:
+    driver: bridge
