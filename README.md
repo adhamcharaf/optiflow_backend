@@ -95,7 +95,9 @@ Génère des données de test pour validation.
 
 ```
 optiflow_extension/
+├── models/                      
 ├── scripts/
+|   ├── ml/                      # Script de machin learning
 │   ├── setup_environment.py     # Script d'initialisation
 │   ├── test_connection.py       # Test connexions
 │   ├── etl_odoo_to_supabase.py  # ETL principal
