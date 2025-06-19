@@ -1,0 +1,552 @@
+{
+  "evaluation_date": "2025-06-19T02:52:16.533852",
+  "total_products": 9,
+  "individual_results": [
+    {
+      "success": false,
+      "error": "Division train/test impossible",
+      "product_id": 2,
+      "product_name": "Bureau personnalisable",
+      "sales_count": 33
+    },
+    {
+      "success": false,
+      "error": "Données insuffisantes (26 jours)",
+      "product_id": 3,
+      "product_name": "Bureau personnalisable",
+      "sales_count": 26
+    },
+    {
+      "success": true,
+      "product_id": 4,
+      "data_summary": {
+        "total_days": 101,
+        "train_days": 87,
+        "test_days": 14,
+        "total_sales": 211.0,
+        "avg_daily_sales": 2.089108910891089,
+        "period": {
+          "start": "2024-01-01",
+          "end": "2024-11-27"
+        }
+      },
+      "metrics": {
+        "mae": 1.576,
+        "mse": 3.274,
+        "rmse": 1.809,
+        "mape": 80.68,
+        "bias": -1.574,
+        "bias_percentage": -84.76,
+        "direction_accuracy": 61.54,
+        "confidence_coverage": 14.29,
+        "avg_interval_width": 1.843,
+        "r_squared": 0.0
+      },
+      "quality_analysis": {
+        "quality_level": "acceptable",
+        "recommendation": "Modèle acceptable, utile pour tendances générales",
+        "strengths": [
+          "Dataset suffisant pour Prophet"
+        ],
+        "weaknesses": [
+          "Difficulté à prédire la direction des ventes",
+          "Intervalles de confiance peu calibrés",
+          "Tendance à sous-estimer les ventes"
+        ],
+        "confidence_score": 19.319999999999993,
+        "usability": {
+          "automation": false,
+          "alerts": true,
+          "monitoring": true
+        }
+      },
+      "test_predictions": {
+        "actual": [
+          1.0,
+          1.0,
+          3.0,
+          3.0,
+          2.0,
+          2.0,
+          1.0,
+          2.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          3.0
+        ],
+        "predicted": [
+          1.012408388481954,
+          0.8353804235227191,
+          0.6598565787903888,
+          0.43294711121908674,
+          0.3365177799120362,
+          0.21222788724764444,
+          0.10714102013350994,
+          0.03043916507233363,
+          -0.015097246195973671,
+          -0.031711986315241525,
+          0.014676780218552324,
+          0.03587127324677681,
+          0.10985529100291246,
+          0.22081692793240776
+        ],
+        "dates": [
+          "2024-10-28",
+          "2024-10-30",
+          "2024-10-31",
+          "2024-11-01",
+          "2024-11-04",
+          "2024-11-06",
+          "2024-11-08",
+          "2024-11-13",
+          "2024-11-14",
+          "2024-11-20",
+          "2024-11-22",
+          "2024-11-25",
+          "2024-11-26",
+          "2024-11-27"
+        ]
+      },
+      "product_name": "Bureau d'angle avec siège à droite",
+      "sales_count": 101
+    },
+    {
+      "success": true,
+      "product_id": 5,
+      "data_summary": {
+        "total_days": 252,
+        "train_days": 238,
+        "test_days": 14,
+        "total_sales": 3825.0,
+        "avg_daily_sales": 15.178571428571429,
+        "period": {
+          "start": "2024-01-01",
+          "end": "2024-11-30"
+        }
+      },
+      "metrics": {
+        "mae": 8.281,
+        "mse": 97.639,
+        "rmse": 9.881,
+        "mape": 88.42,
+        "bias": 7.685,
+        "bias_percentage": 52.48,
+        "direction_accuracy": 69.23,
+        "confidence_coverage": 42.86,
+        "avg_interval_width": 13.207,
+        "r_squared": 0.045
+      },
+      "quality_analysis": {
+        "quality_level": "acceptable",
+        "recommendation": "Modèle acceptable, utile pour tendances générales",
+        "strengths": [
+          "Dataset suffisant pour Prophet"
+        ],
+        "weaknesses": [
+          "Difficulté à prédire la direction des ventes",
+          "Intervalles de confiance peu calibrés",
+          "Tendance à surestimer les ventes"
+        ],
+        "confidence_score": 11.579999999999998,
+        "usability": {
+          "automation": false,
+          "alerts": true,
+          "monitoring": true
+        }
+      },
+      "test_predictions": {
+        "actual": [
+          10.0,
+          8.0,
+          23.0,
+          22.0,
+          9.0,
+          24.0,
+          21.0,
+          16.0,
+          6.0,
+          9.0,
+          13.0,
+          18.0,
+          19.0,
+          7.0
+        ],
+        "predicted": [
+          18.56142427212652,
+          17.395314507806678,
+          19.953028503570774,
+          22.1671854125134,
+          24.7278429575902,
+          22.86848985329442,
+          22.47233987677294,
+          22.40868767584535,
+          20.807837484897348,
+          22.901077614127903,
+          24.591537857123598,
+          26.587639091800863,
+          24.089588308672383,
+          23.05150512479253
+        ],
+        "dates": [
+          "2024-11-15",
+          "2024-11-16",
+          "2024-11-18",
+          "2024-11-19",
+          "2024-11-20",
+          "2024-11-21",
+          "2024-11-22",
+          "2024-11-24",
+          "2024-11-25",
+          "2024-11-26",
+          "2024-11-27",
+          "2024-11-28",
+          "2024-11-29",
+          "2024-11-30"
+        ]
+      },
+      "product_name": "Boîte de rangement",
+      "sales_count": 252
+    },
+    {
+      "success": true,
+      "product_id": 6,
+      "data_summary": {
+        "total_days": 153,
+        "train_days": 139,
+        "test_days": 14,
+        "total_sales": 464.0,
+        "avg_daily_sales": 3.0326797385620914,
+        "period": {
+          "start": "2024-01-01",
+          "end": "2024-11-29"
+        }
+      },
+      "metrics": {
+        "mae": 1.493,
+        "mse": 2.858,
+        "rmse": 1.691,
+        "mape": 65.5,
+        "bias": -0.448,
+        "bias_percentage": -14.95,
+        "direction_accuracy": 38.46,
+        "confidence_coverage": 57.14,
+        "avg_interval_width": 3.006,
+        "r_squared": 0.053
+      },
+      "quality_analysis": {
+        "quality_level": "acceptable",
+        "recommendation": "Modèle acceptable, utile pour tendances générales",
+        "strengths": [
+          "Dataset suffisant pour Prophet"
+        ],
+        "weaknesses": [
+          "Difficulté à prédire la direction des ventes",
+          "Intervalles de confiance peu calibrés",
+          "Tendance à sous-estimer les ventes"
+        ],
+        "confidence_score": 34.5,
+        "usability": {
+          "automation": false,
+          "alerts": true,
+          "monitoring": true
+        }
+      },
+      "test_predictions": {
+        "actual": [
+          2.0,
+          2.0,
+          2.0,
+          3.0,
+          5.0,
+          1.0,
+          4.0,
+          1.0,
+          4.0,
+          5.0,
+          5.0,
+          5.0,
+          2.0,
+          1.0
+        ],
+        "predicted": [
+          2.471508317930255,
+          2.3727019328310988,
+          2.442966781383062,
+          2.2350196213812064,
+          2.0972114895133913,
+          2.4357721788366886,
+          2.5022961335727856,
+          2.6540868361843546,
+          2.6331065238893383,
+          2.774275149624421,
+          2.627553437673204,
+          2.540723158975938,
+          2.9198757221188014,
+          3.0139844554537305
+        ],
+        "dates": [
+          "2024-11-07",
+          "2024-11-11",
+          "2024-11-12",
+          "2024-11-13",
+          "2024-11-14",
+          "2024-11-18",
+          "2024-11-19",
+          "2024-11-20",
+          "2024-11-21",
+          "2024-11-22",
+          "2024-11-25",
+          "2024-11-27",
+          "2024-11-28",
+          "2024-11-29"
+        ]
+      },
+      "product_name": "Armoire avec portes",
+      "sales_count": 153
+    },
+    {
+      "success": false,
+      "error": "Division train/test impossible",
+      "product_id": 7,
+      "product_name": "Bureau personnalisable",
+      "sales_count": 32
+    },
+    {
+      "success": false,
+      "error": "Données insuffisantes (26 jours)",
+      "product_id": 8,
+      "product_name": "Bureau personnalisable",
+      "sales_count": 26
+    },
+    {
+      "success": true,
+      "product_id": 9,
+      "data_summary": {
+        "total_days": 62,
+        "train_days": 48,
+        "test_days": 14,
+        "total_sales": 116.0,
+        "avg_daily_sales": 1.8709677419354838,
+        "period": {
+          "start": "2024-01-04",
+          "end": "2024-11-29"
+        }
+      },
+      "metrics": {
+        "mae": 25.809,
+        "mse": 1640.59,
+        "rmse": 40.504,
+        "mape": 1670.49,
+        "bias": -2.097,
+        "bias_percentage": -122.32,
+        "direction_accuracy": 30.77,
+        "confidence_coverage": 7.14,
+        "avg_interval_width": 1.114,
+        "r_squared": 0.01
+      },
+      "quality_analysis": {
+        "quality_level": "very_poor",
+        "recommendation": "Modèle non recommandé, plus de données nécessaires",
+        "strengths": [],
+        "weaknesses": [
+          "Difficulté à prédire la direction des ventes",
+          "Intervalles de confiance peu calibrés",
+          "Tendance à sous-estimer les ventes",
+          "Dataset limité, plus de données amélioreraient le modèle"
+        ],
+        "confidence_score": 0,
+        "usability": {
+          "automation": false,
+          "alerts": false,
+          "monitoring": true
+        }
+      },
+      "test_predictions": {
+        "actual": [
+          3.0,
+          1.0,
+          1.0,
+          3.0,
+          1.0,
+          3.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          3.0
+        ],
+        "predicted": [
+          2.5994982302240923,
+          3.539855203122514,
+          4.732167892435528,
+          -105.80132483114276,
+          7.306167564424914,
+          8.7443885583871,
+          11.352213215129945,
+          13.450315122736578,
+          16.567653674847755,
+          20.104570413468956,
+          -85.1383376897317,
+          27.810566205011117,
+          31.98801984533711,
+          37.38641370180557
+        ],
+        "dates": [
+          "2024-10-04",
+          "2024-10-08",
+          "2024-10-15",
+          "2024-10-16",
+          "2024-10-17",
+          "2024-10-22",
+          "2024-10-29",
+          "2024-10-31",
+          "2024-11-05",
+          "2024-11-06",
+          "2024-11-13",
+          "2024-11-18",
+          "2024-11-26",
+          "2024-11-29"
+        ]
+      },
+      "product_name": "Bureau personnalisable",
+      "sales_count": 62
+    },
+    {
+      "success": true,
+      "product_id": 10,
+      "data_summary": {
+        "total_days": 242,
+        "train_days": 228,
+        "test_days": 14,
+        "total_sales": 1665.0,
+        "avg_daily_sales": 6.880165289256198,
+        "period": {
+          "start": "2024-01-01",
+          "end": "2024-11-30"
+        }
+      },
+      "metrics": {
+        "mae": 3.351,
+        "mse": 15.652,
+        "rmse": 3.956,
+        "mape": 80.79,
+        "bias": 3.186,
+        "bias_percentage": 55.06,
+        "direction_accuracy": 38.46,
+        "confidence_coverage": 50.0,
+        "avg_interval_width": 6.424,
+        "r_squared": 0.0
+      },
+      "quality_analysis": {
+        "quality_level": "acceptable",
+        "recommendation": "Modèle acceptable, utile pour tendances générales",
+        "strengths": [
+          "Dataset suffisant pour Prophet"
+        ],
+        "weaknesses": [
+          "Difficulté à prédire la direction des ventes",
+          "Intervalles de confiance peu calibrés",
+          "Tendance à surestimer les ventes"
+        ],
+        "confidence_score": 19.209999999999994,
+        "usability": {
+          "automation": false,
+          "alerts": true,
+          "monitoring": true
+        }
+      },
+      "test_predictions": {
+        "actual": [
+          6.0,
+          6.0,
+          9.0,
+          7.0,
+          4.0,
+          3.0,
+          3.0,
+          8.0,
+          8.0,
+          3.0,
+          4.0,
+          8.0,
+          6.0,
+          6.0
+        ],
+        "predicted": [
+          7.037594868573302,
+          7.926843208955377,
+          7.841583759310994,
+          8.783783551514762,
+          7.24511470899392,
+          8.267484642434328,
+          8.325563050281993,
+          8.991175537897425,
+          9.99895163600444,
+          9.987915629118097,
+          10.977780061285737,
+          9.420698043189562,
+          10.410249176853359,
+          10.383558202496257
+        ],
+        "dates": [
+          "2024-11-14",
+          "2024-11-15",
+          "2024-11-18",
+          "2024-11-19",
+          "2024-11-20",
+          "2024-11-21",
+          "2024-11-22",
+          "2024-11-23",
+          "2024-11-25",
+          "2024-11-26",
+          "2024-11-27",
+          "2024-11-28",
+          "2024-11-29",
+          "2024-11-30"
+        ]
+      },
+      "product_name": "Bureau d'angle avec siège à gauche",
+      "sales_count": 242
+    }
+  ],
+  "summary_statistics": {
+    "mape": {
+      "mean": 397.18,
+      "median": 80.79,
+      "min": 65.5,
+      "max": 1670.49,
+      "std": 636.7
+    },
+    "rmse": {
+      "mean": 11.57,
+      "median": 3.96,
+      "min": 1.69,
+      "max": 40.5
+    },
+    "data_quality": {
+      "avg_data_points": 162.0,
+      "min_data_points": 62,
+      "max_data_points": 252
+    }
+  },
+  "recommendations": {
+    "quality_distribution": {
+      "excellent": "0/5 (0.0%)",
+      "good": "0/5 (0.0%)",
+      "acceptable": "4/5 (80.0%)",
+      "poor": "1/5 (20.0%)"
+    },
+    "automation_ready": 0,
+    "alert_ready": 4,
+    "monitoring_only": 1,
+    "global_strategy": "Plus de données historiques nécessaires avant déploiement"
+  },
+  "successful_evaluations": 5,
+  "failed_evaluations": 4
+}

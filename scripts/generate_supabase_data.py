@@ -23,8 +23,8 @@ class SupabaseDataGenerator:
     def __init__(self):
         """Initialise la connexion Supabase"""
         self.supabase: Client = create_client(
-            os.getenv('SUPABASE_URL', 'https://odnvwmcbuoffevpgooqh.supabase.co'),
-            os.getenv('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9kbnZ3bWNidW9mZmV2cGdvb3FoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0OTA1NjQ3NSwiZXhwIjoyMDY0NjMyNDc1fQ.yulUrzHdi9FVBeYbVFdVjoN1Nmyx6DuHhVTYDt9lAhw')
+            os.getenv('SUPABASE_URL'),
+            os.getenv('SUPABASE_KEY')
         )
         self.products = []
         self.customers = []
